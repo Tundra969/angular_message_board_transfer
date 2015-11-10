@@ -11,7 +11,7 @@ app.set("port", process.env.PORT || 5000);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect('mongodb://localhost/angular_first_project');
+mongoose.connect('mongodb://admin:admin@ds053194.mongolab.com:53194/heroku_8m45xj1q');
 
 var Person = mongoose.model('person', new Schema({name: String, comment: String}));
 
